@@ -74,7 +74,7 @@ export const events: WeddingEvent[] = [
     day: "Wednesday, 27 January 2027",
     time: "6:00 PM – 9:00 PM",
     venue: "Zahid Palace Hall",
-    map: "https://www.google.com/maps/search/?api=1&query=Zahid+Palace+Hall",
+    map: "https://maps.app.goo.gl/wjUAisVYameC1c8c7",
     accent: "#8e2436",
     start: "20270127T130000Z",
     end: "20270127T160000Z",
