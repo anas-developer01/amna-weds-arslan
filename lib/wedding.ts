@@ -1,41 +1,41 @@
 export const couple = {
-  groom: "Arsalan",
+  groom: "Arslan",
   bride: "Amna",
-  short: "Arsalan & Amna",
+  short: "Arslan & Amna",
   monogram: ["A", "A"] as const,
 };
 
 export const families = {
-  groom: { parents: "Mr. & Mrs. Ghulam Rasool", relation: "Son of" },
-  bride: { parents: "Mr. & Mrs. Nasir", relation: "Daughter of" },
+  groom: { parents: "Mr. & Mrs. Malik Arshad", relation: "Son of" },
+  bride: { parents: "Mr. & Mrs. Eid Muhammad", relation: "Daughter of" },
   lookingForward: [
-    "Malik Ghulam Nabi",
-    "Malik Aslam",
-    "Malik Shahid Iqbal",
-    "Malik Ajmal Shahzad",
-    "Malik Shahbaz",
-    "Malik Ali Raza",
-    "Malik Mudassir",
+    "Abdul Ghafar (Late)",
+    "M Tariq (Late)",
+    "M Ishfaq",
+    "M Iftikhar",
+    "M Shahid",
+    "M Irfan",
+    "Farzand",
+    "Ashraf",
+    "Shahzad",
+    "Ibrar",
+    "Imran",
   ],
-  brother: "Malik Fahad Rasool",
+  brothers: ["Ali Hassan", "Hussnain"],
+  sisters: ["Zainab", "Kashaf"],
   cousins: [
-    "Malik Uzair",
-    "Malik Hassan",
-    "Malik Shahzaib",
-    "Malik Bilal Shahid",
-    "Malik Ali",
-    "Malik Abdul Rehman",
-    "Malik Abdul Hadi",
-    "Malik Musa",
-    "Malik Azhan",
-    "Malik Noraiz",
+    "Bisma", "Muqadas", "Arooj", "Laiba", "Aliha", "Anaya", "Abeeha",
+    "Arshma", "Sana", "Shiza", "Maira", "Qurat ul Ain", "Anum", "Ushna",
+    "Muzammil", "Umar", "Farhan", "Anas", "Nouman", "Zeeshan (Shani)",
+    "Talha", "Ahmed", "Moeez", "Asad", "Qasim", "Hasham", "Adnan", "Arham",
   ],
 };
 
 /** Contacts for guest queries — numbers in local Pakistani format */
 export const contacts = [
-  { name: "Mr. Ghulam Rasool", role: "Father of the Groom", phone: "03059654192" },
-  { name: "Malik Fahad Rasool", role: "Brother of the Groom", phone: "03095481288" },
+  { name: "Eid Muhammad", role: "Father of the Bride", phone: "03054076275" },
+  { name: "Muhammad Ishfaq", role: "For Queries", phone: "03214677605" },
+  { name: "Ali Hassan", role: "Brother of the Bride", phone: "03718076275" },
 ];
 
 /** 03059654192 -> 923059654192 (for tel: and WhatsApp links) */
@@ -44,7 +44,7 @@ export const intlPhone = (local: string) => `92${local.replace(/\D/g, "").replac
 export const prettyPhone = (local: string) => local.replace(/^(\d{4})(\d+)$/, "$1 $2");
 
 export type WeddingEvent = {
-  key: "mehndi" | "barat" | "walima";
+  key: "mehndi" | "barat";
   title: string;
   day: string;
   time: string;
@@ -59,41 +59,30 @@ export type WeddingEvent = {
 export const events: WeddingEvent[] = [
   {
     key: "mehndi",
-    title: "Mehndi",
-    day: "Thursday, 12 November 2026",
-    time: "7:00 PM onwards",
-    venue: "Al Madina Grand Marquee, Hasilpur",
-    map: "https://share.google/h7aaqnPoEZzM0liaJ",
+    title: "Mehandi",
+    day: "Tuesday, 26 January 2027",
+    time: "6:00 PM – 9:00 PM",
+    venue: "Palki Hall",
+    map: "https://www.google.com/maps/search/?api=1&query=Palki+Hall",
     accent: "#b07a12",
-    start: "20261112T140000Z",
-    end: "20261112T180000Z",
+    start: "20270126T130000Z",
+    end: "20270126T160000Z",
   },
   {
     key: "barat",
     title: "Barat",
-    day: "Saturday, 14 November 2026",
-    time: "3:00 PM",
-    venue: "Departure from Hasilpur to Multan",
-    map: "https://share.google/XtmLhBHP72voijPo0",
+    day: "Wednesday, 27 January 2027",
+    time: "6:00 PM – 9:00 PM",
+    venue: "Zahid Palace Hall",
+    map: "https://www.google.com/maps/search/?api=1&query=Zahid+Palace+Hall",
     accent: "#8e2436",
-    start: "20261114T100000Z",
-    end: "20261114T150000Z",
-  },
-  {
-    key: "walima",
-    title: "Walima",
-    day: "Sunday, 15 November 2026",
-    time: "2:00 PM",
-    venue: "Al Madina Grand Marquee, Hasilpur",
-    map: "https://share.google/h7aaqnPoEZzM0liaJ",
-    accent: "#1f7a57",
-    start: "20261115T090000Z",
-    end: "20261115T130000Z",
+    start: "20270127T130000Z",
+    end: "20270127T160000Z",
   },
 ];
 
-/** Barat — 14 Nov 2026, 3:00 PM Pakistan time */
-export const countdownTarget = "2026-11-14T15:00:00+05:00";
+/** Barat — 27 January 2027, 6:00 PM Pakistan time */
+export const countdownTarget = "2027-01-27T18:00:00+05:00";
 
 export function calendarUrl(e: WeddingEvent) {
   const q = new URLSearchParams({

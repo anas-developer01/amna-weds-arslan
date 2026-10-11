@@ -185,7 +185,7 @@ export default function Gate({ p, onOpen }: { p: MotionValue<number>; onOpen: ()
         </motion.button>
 
         <motion.div className="gate-hint" style={{ opacity: textOpacity, y: hintY, x: "-50%" }}>
-          <span className="names-top">Arsalan <em>&amp;</em> Amna</span>
+          <span className="names-top">Arslan <em>&amp;</em> Amna</span>
           {count !== null && (
             <>
               <span className="auto-bar" aria-hidden="true"><i style={{ animationDuration: `${AUTO_OPEN_SECONDS}s` }} /></span>

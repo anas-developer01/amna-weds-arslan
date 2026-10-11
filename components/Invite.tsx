@@ -7,8 +7,9 @@ import Reveal from "./Reveal";
 import { couple, families } from "@/lib/wedding";
 
 const text: [string, boolean?][] = [
-  ["Together"], ["with"], ["our"], ["families,"], ["we"], ["joyfully"], ["invite"], ["you"], ["to"], ["celebrate"], ["the"], ["union"], ["of"],
-  ["Arsalan", true], ["and"], ["Amna.", true],
+  ["Mr."], ["&"], ["Mrs."], ["Eid"], ["Muhammad"], ["and"], ["family"],
+  ["joyfully"], ["invite"], ["you"], ["to"], ["celebrate"], ["the"], ["wedding"], ["of"], ["their"], ["daughter"],
+  ["Amna", true], ["with"], ["Arslan.", true],
   ["Your"], ["presence,"], ["love"], ["and"], ["prayers"], ["would"], ["make"], ["our"], ["happiness"], ["complete."],
 ];
 

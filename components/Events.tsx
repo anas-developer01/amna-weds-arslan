@@ -3,10 +3,10 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import { useRef } from "react";
 import { calendarUrl, events, type WeddingEvent } from "@/lib/wedding";
-import { BaratArt, Icon, MehndiArt, Scallop, WalimaArt } from "./Art";
+import { BaratArt, Icon, MehndiArt, Scallop } from "./Art";
 import Reveal from "./Reveal";
 
-const art = { mehndi: <MehndiArt />, barat: <BaratArt />, walima: <WalimaArt /> };
+const art = { mehndi: <MehndiArt />, barat: <BaratArt /> };
 
 function EventCard({ e, i }: { e: WeddingEvent; i: number }) {
   const ref = useRef<HTMLElement>(null);

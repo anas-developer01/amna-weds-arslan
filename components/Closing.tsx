@@ -21,16 +21,23 @@ export function Dua() {
         <Reveal as="p" className="en" delay={0.2}>“May Allah bless you both, shower His blessings upon you, and unite you in goodness.”</Reveal>
         <Reveal className="host" delay={0.3}>
           <p>With best compliments from</p>
-          <h4>{families.groom.parents}</h4>
+          <h4>{families.bride.parents}</h4>
         </Reveal>
         <Reveal className="host forward" delay={0.4}>
           <p>Looking forward</p>
           <ul className="forward-list">
             {families.lookingForward.map((name) => <li key={name}>{name}</li>)}
           </ul>
-          <p className="forward-sub">Brother &amp; Cousins</p>
+          <p className="forward-sub">Brothers</p>
           <ul className="forward-list small">
-            <li className="brother">{families.brother} <span>(Brother)</span></li>
+            {families.brothers.map((name) => <li key={name}>{name}</li>)}
+          </ul>
+          <p className="forward-sub">Sisters</p>
+          <ul className="forward-list small">
+            {families.sisters.map((name) => <li key={name}>{name}</li>)}
+          </ul>
+          <p className="forward-sub">Cousins</p>
+          <ul className="forward-list small">
             {families.cousins.map((name) => <li key={name}>{name}</li>)}
           </ul>
         </Reveal>
@@ -58,7 +65,7 @@ export function Dua() {
 export function Footer() {
   const [toast, setToast] = useState("");
   const share = async () => {
-    const data = { title: "Arsalan & Amna — Wedding Invitation", text: "You are invited to the wedding of Arsalan & Amna 💍", url: location.href };
+    const data = { title: "Arslan & Amna — Wedding Invitation", text: "You are invited to the wedding of Arslan & Amna 💍", url: location.href };
     try {
       if (navigator.share) { await navigator.share(data); return; }
       await navigator.clipboard.writeText(location.href);
@@ -79,11 +86,11 @@ export function Footer() {
         <span className="foil">A&amp;A</span>
       </motion.div>
       <Reveal as="p" className="thanks" delay={0.2}><span className="foil">We can&apos;t wait to celebrate with you</span></Reveal>
-      <Reveal as="p" className="sub" delay={0.3}>Arsalan &amp; Amna · November 2026</Reveal>
+      <Reveal as="p" className="sub" delay={0.3}>Arslan &amp; Amna · January 2027</Reveal>
       <Reveal delay={0.4}>
         <button className="btn" onClick={share}>{Icon.share}Share Invitation</button>
       </Reveal>
-      <p className="credit">{"// built with love by the groom"}</p>
+      <p className="credit">{"// built with love by the bride"}</p>
       <div className={`toast${toast ? " show" : ""}`}>{toast}</div>
     </footer>
   );

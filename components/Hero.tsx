@@ -84,14 +84,14 @@ export default function Hero() {
             <div className="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
             <p className="small">The Wedding Celebration of</p>
             <h1 className="names">
-              <span className="foil-green">Arsalan</span>
+              <span className="foil-green">Arslan</span>
               <span className="amp foil">&amp;</span>
               <span className="foil-green">Amna</span>
             </h1>
-            <p className="full">Arsalan · Amna</p>
+            <p className="full">Arslan · Amna</p>
             <div className="divider">✦</div>
-            <div className="dates"><b>12</b><i>·</i><b>14</b><i>·</i><b>15</b></div>
-            <p className="month">November 2026</p>
+            <div className="dates"><b>26 Jan</b><i>·</i><b>27 Jan</b></div>
+            <p className="month">January 2027</p>
           </motion.div>
         </div>
 

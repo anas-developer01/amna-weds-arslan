@@ -11,33 +11,33 @@ const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
 
-const title = "Arsalan & Amna — Wedding Invitation";
+const title = "Arslan & Amna — Wedding Invitation";
 const description =
-  "You are cordially invited to the wedding of Arsalan & Amna. Mehndi 12 Nov · Barat 14 Nov · Walima 15 Nov 2026 · Hasilpur.";
+  "You are cordially invited to the wedding of Arslan & Amna. Mehandi 26 Jan · Barat 27 Jan 2027 · 6–9 PM · Palki Hall & Zahid Palace Hall.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
-  applicationName: "Arsalan & Amna Wedding",
-  keywords: ["Arsalan", "Amna", "Arsalan weds Amna", "wedding invitation", "Mehndi", "Barat", "Walima", "Hasilpur", "Multan"],
-  authors: [{ name: "Arsalan" }],
+  applicationName: "Arslan & Amna Wedding",
+  keywords: ["Arslan", "Amna", "Arslan weds Amna", "wedding invitation", "Mehandi", "Barat", "Palki Hall", "Zahid Palace Hall"],
+  authors: [{ name: "Arslan" }],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Arsalan & Amna — Wedding",
-    title: "You're invited — Arsalan & Amna 💍",
+    siteName: "Arslan & Amna — Wedding",
+    title: "You're invited — Arslan & Amna 💍",
     description,
     locale: "en_PK",
   },
   twitter: {
     card: "summary_large_image",
-    title: "You're invited — Arsalan & Amna 💍",
+    title: "You're invited — Arslan & Amna 💍",
     description,
   },
   robots: { index: true, follow: true },
-  appleWebApp: { title: "Arsalan & Amna", statusBarStyle: "default" },
+  appleWebApp: { title: "Arslan & Amna", statusBarStyle: "default" },
   formatDetection: { telephone: false },
 };
 
