@@ -1,8 +1,8 @@
 export const couple = {
-  groom: "Anas Rasool",
-  bride: "Iram Nasir",
-  short: "Anas & Iram",
-  monogram: ["A", "I"] as const,
+  groom: "Arsalan",
+  bride: "Amna",
+  short: "Arsalan & Amna",
+  monogram: ["A", "A"] as const,
 };
 
 export const families = {

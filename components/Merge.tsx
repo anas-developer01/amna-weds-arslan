@@ -6,8 +6,8 @@ import Reveal from "./Reveal";
 type Seg = [string, string?];
 const lines: Seg[][] = [
   [["$ ", "p"], ["git checkout -b ", ""], ["forever", "s"]],
-  [["$ ", "p"], ["git merge ", ""], ["iram-nasir", "s"], [" --no-ff", "c"]],
-  [["  ✓ ", "ok"], ["Merged ", ""], ["anas-rasool ", "s"], ["♥ ", "h"], ["iram-nasir", "s"]],
+  [["$ ", "p"], ["git merge ", ""], ["amna", "s"], [" --no-ff", "c"]],
+  [["  ✓ ", "ok"], ["Merged ", ""], ["arsalan ", "s"], ["♥ ", "h"], ["amna", "s"]],
   [["  ✓ ", "ok"], ["Reviewed & approved by: ", ""], ["both families", "s"]],
   [["  ✓ ", "ok"], ["Conflicts: ", ""], ["0", "s"], ["  // alhamdulillah", "c"]],
   [["$ ", "p"], ["deploy --env ", ""], ["forever", "s"], [" --date ", ""], ["2026-11-14", "s"]],
@@ -33,7 +33,7 @@ export default function Merge() {
         >
           <div className="term-bar">
             <i style={{ background: "#e46b5d" }} /><i style={{ background: "#e7b54a" }} /><i style={{ background: "#5fbf7c" }} />
-            <span>~/life/anas-weds-iram</span>
+            <span>~/life/arsalan-weds-amna</span>
           </div>
           <motion.div
             className="term-body"

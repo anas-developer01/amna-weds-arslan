@@ -58,7 +58,7 @@ export function Dua() {
 export function Footer() {
   const [toast, setToast] = useState("");
   const share = async () => {
-    const data = { title: "Anas & Iram — Wedding Invitation", text: "You are invited to the wedding of Anas & Iram 💍", url: location.href };
+    const data = { title: "Arsalan & Amna — Wedding Invitation", text: "You are invited to the wedding of Arsalan & Amna 💍", url: location.href };
     try {
       if (navigator.share) { await navigator.share(data); return; }
       await navigator.clipboard.writeText(location.href);
@@ -76,10 +76,10 @@ export function Footer() {
         viewport={{ once: true }}
         transition={{ duration: 1.4, ease: [0.34, 1.56, 0.64, 1] }}
       >
-        <span className="foil">A&amp;I</span>
+        <span className="foil">A&amp;A</span>
       </motion.div>
       <Reveal as="p" className="thanks" delay={0.2}><span className="foil">We can&apos;t wait to celebrate with you</span></Reveal>
-      <Reveal as="p" className="sub" delay={0.3}>Anas &amp; Iram · November 2026</Reveal>
+      <Reveal as="p" className="sub" delay={0.3}>Arsalan &amp; Amna · November 2026</Reveal>
       <Reveal delay={0.4}>
         <button className="btn" onClick={share}>{Icon.share}Share Invitation</button>
       </Reveal>

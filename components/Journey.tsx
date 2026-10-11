@@ -91,7 +91,7 @@ function WeddingCar({ wheelA, wheelB }: { wheelA: React.Ref<SVGGElement>; wheelB
       <rect x="-48" y="-21" width="2.6" height="4" rx="1" fill="#c42a43" />
       {/* number plate */}
       <rect x="44" y="-14" width="10" height="4.4" rx=".8" fill="#fffaf0" stroke="#b8933f" strokeWidth=".3" />
-      <text x="49" y="-10.8" textAnchor="middle" fontSize="3" fontWeight="700" fill="#6e2f3c" style={{ fontFamily: "var(--serif)" }}>A♥I</text>
+      <text x="49" y="-10.8" textAnchor="middle" fontSize="3" fontWeight="700" fill="#6e2f3c" style={{ fontFamily: "var(--serif)" }}>A♥A</text>
 
       {/* flower garland swags along the side */}
       <Garland from={[-44, -24]} to={[-24, -24]} sag={5} n={9} />
@@ -565,7 +565,7 @@ export default function Journey() {
           </svg>
         </div>
 
-        <Reveal as="p" className="journey-caption">From Hasilpur to Multan — to bring Iram home</Reveal>
+        <Reveal as="p" className="journey-caption">From Hasilpur to Multan — to bring Amna home</Reveal>
         <Reveal delay={0.15}>
           <a className="btn solid" style={{ marginTop: 22 }} href={barat.map} target="_blank" rel="noopener noreferrer">View Barat Location</a>
         </Reveal>
